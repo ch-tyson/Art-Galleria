@@ -36,3 +36,5 @@ next-env.d.ts
 
 # env variables
 .env.local
+
+/node_modules
