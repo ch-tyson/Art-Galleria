@@ -7,12 +7,15 @@ type Props = {
 
 export default function ImgContainer ({ photo }: Props) {
     return (
-        <div key={photo.id} className="h-64 bg-gray-200 rounded-xl">
+        <div key={photo.id} className="h-64 bg-gray-200 rounded-xl
+        relative">
             <Image
             src={photo.src.large}
             alt = {photo.alt}
+            fill={true}
             width={250}
             height={250}
+            className="object-cover"
             />
         </div>
     )
